@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="crossorigin="anonymous"></script>
+</head>
+<body>
+test
+</body>
+<script>
+    $('document').ready(function () {
+        var self = location.search;
+        var url = self.substr(5);
+        console.log('http://'+url);
+        window.location = '//'+url;
+    });
+</script>
+</html>
